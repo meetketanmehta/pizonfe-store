@@ -12,7 +12,7 @@ class Product {
   Product.fromJSON(Map<dynamic, dynamic> proJSON) {
     this.id = proJSON['proId'];
     this.options = proJSON['options'];
-    this.price = proJSON['price'].toDouble();
+    this.price = proJSON['price'] != null ? proJSON['price'].toDouble() : null;
     this.quantity = proJSON['quantity'];
     this.title = proJSON['title'];
     this.imageUri = proJSON['imageUri'];

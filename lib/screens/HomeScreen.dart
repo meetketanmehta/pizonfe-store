@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../src/components/OrdersBody.dart';
 import 'package:flutter_user_auth/screens/Login.dart';
 import 'package:flutter_user_auth/flutter_user_auth.dart';
+import '../src/components/SellNewProductBody.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -20,6 +21,9 @@ class _HomeScreen extends State<HomeScreen> {
     }
     if(index == 1) {
       return OrdersBody(ordersType: "Completed",);
+    }
+    if(index == 2) {
+      return SellNewProductBody();
     }
   }
 
